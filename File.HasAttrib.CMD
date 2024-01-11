@@ -14,4 +14,3 @@ ECHO "%~a1" | FIND /I "%~2" && (
 ) || (
   SET "@=FALSE" & EXIT /B 1
 )
-EXIT /B
