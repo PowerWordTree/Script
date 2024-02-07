@@ -1,5 +1,20 @@
 # 更新日志
 
+## 0.3.0 / 2024-02-07
+
+- fix: 修正 Window.\*.CMD 变量未初始化问题
+- feat: 新增 Process.Callback.CMD
+- feat: 新增 Common.Clone.CMD
+- feat: 新增 Object.ForEach\*.CMD
+- feat: 修改 Object.List\*.CMD 功能
+- feat: 新增 Array.ForEach.CMD
+- feat: 移除 Array.List.CMD
+- feat: 新增 Array.Length.CMD
+- feat: 新增 Map.ForEach\*.CMD
+- feat: 修改 Map.List\*.CMD 功能
+- fix: 修正 Process.Retry.CMD 参数传递问题
+- fix: 修正 Common.Expand.CMD 特殊字符问题
+
 ## 0.2.1 / 2024-01-11
 
 - feat: 新增 File.Exist.CMD
