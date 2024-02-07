@@ -1,5 +1,10 @@
 # 更新日志
 
+## 0.3.1 / 2024-02-07
+
+- fix: 更换 Config.FileWrite.CMD 依赖的工具脚本
+- feat: 新增 Path.GetAbsolutePath.CMD
+
 ## 0.3.0 / 2024-02-07
 
 - fix: 修正 Window.\*.CMD 变量未初始化问题
