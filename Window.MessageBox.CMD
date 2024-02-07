@@ -30,6 +30,7 @@
 
 SETLOCAL
 SET "@TEXT=%~1" & SET "@CAPTION=%~2" & SET "@BUTTONS=%~3" & SET "@ICON=%~4"
+SET "@=" & SET "@EXIT_CODE=0"
 FOR /F "usebackq delims=" %%A IN (
   `Powershell.exe -Command ^^^& {
     $ErrorActionPreference^='SilentlyContinue'^;

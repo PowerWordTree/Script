@@ -23,6 +23,7 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 SETLOCAL
+SET "@=" & SET "@EXIT_CODE=0"
 CALL Argument.Parser.CMD "@" %*
 FOR /F "usebackq delims=" %%A IN (
   `Powershell.exe -Command ^^^& {
