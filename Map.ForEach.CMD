@@ -24,11 +24,11 @@ FOR /F "usebackq delims=" %%A IN (
   `Powershell.exe -NonInteractive -Command ^^^& {
     $ErrorActionPreference ^= 'SilentlyContinue'^;
     $Keys ^= ^(Get-Item Env:${Env:@PREFIX}@LIST^).Value^;
-    $Keys ^= $Keys.Split^('^;', [StringSplitOptions]::RemoveEmptyEntries^)^;
+    $Keys ^= $Keys.Split^('^;'^, [StringSplitOptions]::RemoveEmptyEntries^)^;
     foreach ^($Key in $Keys^) {
       $Item ^= Get-Item Env:${Env:@PREFIX}$Key^;
       ${Env:@CMD} -f $Key^, $Item.Value^;
-    }^:
+    }^;
   }`
 ) DO (
   SET "@CMD=%%A"
