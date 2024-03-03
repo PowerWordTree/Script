@@ -1,19 +1,20 @@
-::Authors FB
-::Version 0.1.0
-::Description
+::ScriptNameScriptNameScriptName
+::@Authors FB
+::@Version 0.1.0
+::@Description
 ::  Description Description Description
-::Syntax
+::@Syntax
 ::  xxx.cmd [arg1] [/option1 data]
-::Variables
+::@Variables
 ::  @, @STR, @EXIT_CODE
-::Arguments
+::@Arguments
 ::  %1: arg1arg1
 ::  %2: arg2arg2
 ::    arg2arg2arg2arg2arg2arg2
 ::  -OPT1: opt1opt1opt1
 ::    opt1opt1opt1opt1opt1opt1
 ::  -OPT2: opt2opt2opt2
-::Outputs
+::@Outputs
 ::  %@%: outputoutputoutput
 ::  %@LIST%: listlistlistlist
 ::  FILE: filefilefilefilefile
@@ -21,16 +22,16 @@
 ::  STDOUT: stdoutstdoutstdoutstdout
 ::    stdoutstdoutstdoutstdoutstdoutstdoutstdout
 ::  STDERR: stderrstderrstderrstderr
-::Returns
+::@Returns
 ::  0: returnreturnreturnreturn
 ::  1: returnreturnreturnreturn
 ::    returnreturnreturnreturn
 ::  N: returnreturnreturnreturn
-::Examples
+::@Examples
 ::  C:\>examplesexamplesexamples
 ::  C:\>examplesexamplesexamplesexamples
 ::  examplesexamplesexamplesexamplesexamplesexamples
-::Notes
+::@Notes
 ::  notesnotesnotesnotesnotesnotesnotesnotes
 ::  notesnotesnotes:
 ::    notesnotesnotesnotesnotesnotes

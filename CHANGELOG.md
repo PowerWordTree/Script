@@ -1,5 +1,13 @@
 # 更新日志
 
+## 0.3.2 / 2024-03-03
+
+- feat: 新增 Common.True.CMD
+- feat: 新增 Common.False.CMD
+- fix: 修正 File.HasAttrib.CMD 输出问题
+- feat: 新增 File.IsHardLink.CMD
+- feat: 新增 Common.Echo.CMD
+
 ## 0.3.1 / 2024-02-07
 
 - fix: 更换 Config.FileWrite.CMD 依赖的工具脚本
