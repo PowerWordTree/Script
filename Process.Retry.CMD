@@ -16,7 +16,7 @@
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 VERIFY 1>NUL 2>&1
-IF "%~3" == "-" (CALL Common.Clone.CMD "%~4" "@CMD") ELSE (SET "@CMD=%~3")
+IF "%~3" == "-" (CALL Common.Clone.CMD "%~4" "@") ELSE (SET "@=%~3")
 FOR /L %%I IN (0,1,%~1) DO (
   IF "%%~I" GTR "0" CALL Common.Sleep.CMD "%~2"
   %@% && EXIT /B
