@@ -13,4 +13,5 @@ CALL ECHO.%%%~1.@LIST%% | FIND /I ";%~2;" 1>NUL 2>&1 ^
   && CALL SET "%~1.@LIST=%%%~1.@LIST:;%~2;=;%%"
 CALL SET "@=%%%~1.%~2%%"
 SET "%~1.%~2="
-EXIT /B
+IF "%@%" == "" EXIT /B 1
+EXIT /B 0
