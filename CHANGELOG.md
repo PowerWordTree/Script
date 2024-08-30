@@ -1,5 +1,11 @@
 # 更新日志
 
+## 0.3.3 / 2024-08-30
+
+- fix: 修复 Map.Remove.CMD 退出码问题
+- fix: 修复 Process.Retry.CMD 变量名错误
+- feat: 新增 File.GetSize.CMD
+
 ## 0.3.2 / 2024-03-03
 
 - feat: 新增 Common.True.CMD
