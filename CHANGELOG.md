@@ -1,5 +1,17 @@
 # 更新日志
 
+## 0.3.4 / 2024-10-03
+
+- feat: 移除 Common.Echo.CMD
+- feat: 新增 Common.EchoNoWrap.CMD
+- feat: 新增 Common.AnsiEscape.CMD
+- fix: 修复 Config.FileRead.CMD 返回值
+- feat: 新增 Common.IsNotAdmin.CMD
+- feat: 新增 Common.IsEqual.CMD
+- feat: 新增 File.HasNotAttrib.CMD
+- feat: 新增 File.IsNotExist.CMD
+- feat: 新增 File.Remove.CMD
+
 ## 0.3.3 / 2024-08-30
 
 - fix: 修复 Map.Remove.CMD 退出码问题
