@@ -1,16 +1,17 @@
 ::@author FB
 ::@version 0.2.0
 
-::使用延迟环境变量`!var!`展开变量时, 会忽略大部分特殊符号.
+::使用延迟环境变量`!var!`展开变量或者命令`FOR`展开变量, 会忽略大部分特殊符号.
 ::例如:
 ::  C:\>SET VAR=ECHO "a & b | c" ^& ECHO true
 ::  C:\>ECHO %VAR%
 ::  ECHO "a & b | c"
 ::  true
+::  C:\>FOR /F "usebackq delims=" %A IN (`SET VAR`) DO ECHO %A
+::  VAR=ECHO "a & b | c" & ECHO true
 ::  C:\>ECHO !VAR!
 ::  ECHO "a & b | c" & ECHO true
-::使用`%VAR%`展开时, 第二个`ECHO`被视为命令.
-::使用`!VAR!`展开时, 全部被视为字符串. (命令`FOR`的变量有同样效果)
+::变量VAR中的`& ECHO true`不会被执行, 视为字符串的一部分.
 
 ::命令回调
 ::  参数N: 回调命令行
